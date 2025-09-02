@@ -50,16 +50,20 @@ Se configuró la aplicación PHP para conectarse con parámetros almacenados en 
 
 Se inicializó la base de datos y se crearon las tablas necesarias.
 
-Se ajustó la configuración de PHP para la zona horaria.
+![db](/Reto%204/Reto4-AWS/src/dbconf.png)
+![db2](/Reto%204/Reto4-AWS/src/dbpassword.png)
 
+Se ajustó la configuración de PHP para la zona horaria.
+![php](/Reto%204/Reto4-AWS/src/phpconf.png)
 Se validó el acceso al sitio dinámico (/cafe), incluyendo menú y órdenes en línea.
 
 #### Replicación en otra región
 
 Se creó una AMI del servidor configurado.
+![ami](/Reto%204/Reto4-AWS/src/Instancia.png)
 
 Se copió la imagen a la región us-west-2 (Oregón).
-
+![amioregon](/Reto%204/Reto4-AWS/src/InstanciaOregon.png)
 Se lanzó una nueva instancia con las mismas características para producción.
 
 Se replicaron los parámetros en Parameter Store de la nueva región.
@@ -73,12 +77,13 @@ Se logró desplegar correctamente un sitio web dinámico en AWS con soporte para
 Se implementaron dos entornos diferenciados:
 
 Desarrollo: us-east-1 (N. Virginia).
+![viginia](/Reto%204/Reto4-AWS/src/pagefuncional.png)
 
 Producción: us-west-2 (Oregón).
-
+![cafeoregon](/Reto%204/Reto4-AWS/src/cafeOregon.png)
 La aplicación es accesible públicamente, con base de datos operativa y parámetros gestionados de forma segura.
 
-Se cumplió con los objetivos planteados del laboratorio en un tiempo estimado de 60 minutos.
+Se cumplió con los objetivos planteados del laboratorio en un tiempo estimado > 60 minutos.
 
 ## Preguntas 
 Question 1: Is the instance in a public subnet?
