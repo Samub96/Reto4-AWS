@@ -34,9 +34,13 @@ Se activaron y configuraron los servicios para iniciar automáticamente tras rei
 
 Se vinculó el entorno AWS Cloud9 con el directorio de Apache para facilitar la edición de archivos.
 
+![cloud9](/Reto%204/Reto4-AWS/src/consoleCLoud9.png)
+
 #### Prueba inicial
 
 Se creó un archivo index.html con un mensaje de prueba.
+
+![index](/Reto%204/Reto4-AWS/src/pagina_desplegada.png)
 
 Se configuró el grupo de seguridad para permitir acceso HTTP (puerto 80) desde cualquier origen.
 
