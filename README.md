@@ -34,13 +34,13 @@ Se activaron y configuraron los servicios para iniciar automáticamente tras rei
 
 Se vinculó el entorno AWS Cloud9 con el directorio de Apache para facilitar la edición de archivos.
 
-![cloud9](/Reto%204/Reto4-AWS/src/consoleCLoud9.png)
+![cloud9](src/consoleCLoud9.png)
 
 #### Prueba inicial
 
 Se creó un archivo index.html con un mensaje de prueba.
 
-![index](/Reto%204/Reto4-AWS/src/pagina_desplegada.png)
+![index](src/pagina_desplegada.png)
 
 Se configuró el grupo de seguridad para permitir acceso HTTP (puerto 80) desde cualquier origen.
 
@@ -54,20 +54,20 @@ Se configuró la aplicación PHP para conectarse con parámetros almacenados en 
 
 Se inicializó la base de datos y se crearon las tablas necesarias.
 
-![db](/Reto%204/Reto4-AWS/src/dbconf.png)
-![db2](/Reto%204/Reto4-AWS/src/dbpassword.png)
+![db](src/dbconf.png)
+![db2](src/dbpassword.png)
 
 Se ajustó la configuración de PHP para la zona horaria.
-![php](/Reto%204/Reto4-AWS/src/phpconf.png)
+![php](src/phpconf.png)
 Se validó el acceso al sitio dinámico (/cafe), incluyendo menú y órdenes en línea.
 
 #### Replicación en otra región
 
 Se creó una AMI del servidor configurado.
-![ami](/Reto%204/Reto4-AWS/src/Instancia.png)
+![ami](src/Instancia.png)
 
 Se copió la imagen a la región us-west-2 (Oregón).
-![amioregon](/Reto%204/Reto4-AWS/src/InstanciaOregon.png)
+![amioregon](src/InstanciaOregon.png)
 Se lanzó una nueva instancia con las mismas características para producción.
 
 Se replicaron los parámetros en Parameter Store de la nueva región.
@@ -81,10 +81,10 @@ Se logró desplegar correctamente un sitio web dinámico en AWS con soporte para
 Se implementaron dos entornos diferenciados:
 
 Desarrollo: us-east-1 (N. Virginia).
-![viginia](/Reto%204/Reto4-AWS/src/pagefuncional.png)
+![viginia](src/pagefuncional.png)
 
 Producción: us-west-2 (Oregón).
-![cafeoregon](/Reto%204/Reto4-AWS/src/cafeOregon.png)
+![cafeoregon](src/cafeOregon.png)
 La aplicación es accesible públicamente, con base de datos operativa y parámetros gestionados de forma segura.
 
 Se cumplió con los objetivos planteados del laboratorio en un tiempo estimado > 60 minutos.
